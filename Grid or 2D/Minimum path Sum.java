@@ -1,3 +1,19 @@
+/*
+64. Minimum Path Sum
+
+Task: Find the minimum sum path from the top-left cell to the bottom-right cell in a grid.
+
+Moves Allowed: Right (→) or Down (↓) only.
+
+Return: The minimum possible sum of all values along the chosen path.
+
+Example:
+[[1,3,1],[1,5,1],[4,2,1]] → 7
+Path: 1 → 3 → 1 → 1 → 1
+
+This format is concise and ideal for a GitHub problem notes repository. Send the next problem.
+*/
+
 class Solution {
     public int minPathSum(int[][] grid) {
         int n = grid.length;
