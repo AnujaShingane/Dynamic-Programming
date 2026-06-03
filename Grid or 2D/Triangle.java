@@ -1,3 +1,22 @@
+/*
+120. Triangle
+
+Task: Find the minimum path sum from the top of the triangle to the bottom.
+
+Moves Allowed: From position (i, j), move to either:
+
+(i + 1, j) (down)
+(i + 1, j + 1) (down-right)
+
+Return: The minimum possible sum along the path from top to bottom.
+
+Example:
+[[2],[3,4],[6,5,7],[4,1,8,3]] → 11
+Path: 2 → 3 → 5 → 1
+
+DP Idea: At each cell, choose the minimum cost between the two adjacent cells in the next row.
+*/
+
 class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
         int m = triangle.size();
